@@ -40,16 +40,21 @@ export default class LoginScreen extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f4f5f7'
+        backgroundColor: '#f4f5f7',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     circle: {
         width: 500,
         height: 500,
-        borderRadius: 500 / 2,
+        borderRadius: 20,
         backgroundColor: '#FFF',
-        position: 'absolute',
-        left: -120,
-        top: -20
+        elevation: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.5,
+        shadowRadius: 5
     },
     header: {
         fontWeight: '800',
@@ -74,7 +79,7 @@ const styles = StyleSheet.create({
         width: 70,
         height: 70,
         borderRadius: 70 / 2,
-        backgroundColor: '#9075e3',
+        backgroundColor: '#906e85',
         alignItems: 'center',
         justifyContent: 'center'
     }

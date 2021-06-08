@@ -6,7 +6,8 @@ import Fire from '../Fire';
 
 export default class ChatScreen extends Component {
     state = {
-        messages: []
+        messages: [],
+        is_users_modal_visible: false
     }
 
     get user() {
